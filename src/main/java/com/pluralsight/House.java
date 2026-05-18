@@ -1,17 +1,23 @@
 package com.pluralsight;
 
-public class House extends FixedAsset {
-    int yearBuilt;
-    int squareFeet;
-    int bedrooms;
+public class House extends FixedAsset{
 
-    House(int year, int squareFeet, int Bedrooms);
+    private int year;
+    private int squareFeet;
+    private int bedrooms;
 
-    @Override
-    double getValue(){
-        return super.getValue();
+    public House(String name, double value, int year, int squareFeet, int bedrooms) {
+        super(name, value);
+        this.year = year;
+        this.squareFeet = squareFeet;
+        this.bedrooms = bedrooms;
     }
 
-
-
+    @Override
+    public double getValue() {
+        return super.getValue();
+    }
 }
+
+
+

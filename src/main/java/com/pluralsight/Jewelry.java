@@ -2,17 +2,19 @@ package com.pluralsight;
 
 public class Jewelry extends FixedAsset {
 
-    double karat;
+    private double karat;
 
-    Jewelry( String name, double karat){
-        super(name);
+    public Jewelry(String name, double value, double karat) {
+        super(name, value);
         this.karat = karat;
-
     }
 
 
+
     @Override
-    double getValue(){return super.getValue();}
+    public double getValue() {
+    return super.getValue();
+    }
 
 
 }

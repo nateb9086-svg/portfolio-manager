@@ -1,18 +1,17 @@
 package com.pluralsight;
 
-public abstract class FixedAsset {
+public abstract class FixedAsset implements Valuable {
 
 
     protected String name;
-    public double value;
+    protected double value;
 
-    public void FixedAsset(String name, double value);{
+    public FixedAsset(String name, double value){
         this.name = name;
-        this.value = value
+        this.value = value;
     }
-
-
-    double getValue() {
+    @Override
+    public double getValue() {
         return value;
     }
 }

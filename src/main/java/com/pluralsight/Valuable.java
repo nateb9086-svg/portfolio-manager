@@ -1,8 +1,8 @@
 package com.pluralsight;
 
-public class Valuable {
+public interface Valuable {
 
-    double getValue(){return value}
+    double getValue();
 
 
 
